@@ -3,6 +3,8 @@
     margin: 0;
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    font-style: none;
 }
 
 .body {
@@ -81,7 +83,7 @@
     color: white;
 }
 
-.login-form-buttom {
+.login-form-button {
     width: 90%;
     margin: 2rem;
     padding: 0.5rem;
@@ -98,8 +100,24 @@
     user-select: none;
 }
 
-.login-form-buttom:hover {
+.login-form-button:hover {
     box-shadow: none;
+}
+
+.login-form-singup-link-container {
+    display: flex;
+    justify-content: end;
+    width: 90%;
+}
+
+.login-form-singup-link {
+    color: gray;
+    margin-bottom: 1rem;
+    transition: 0.3s ease-in-out;
+}
+
+.login-form-singup-link:hover {
+    color: white;
 }
 
 @media screen and (max-width: 1100px) {
@@ -110,6 +128,17 @@
 
     .aside-text {
         font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1340px) {
+    .aside-img-singup {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    .singup-container {
+        width: 55vw;
     }
 }
 
@@ -136,6 +165,19 @@
         margin: 2rem;
     }
 
+    .singup-container {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .singup-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin: 1rem 0;
+    }
 }
 
 @media screen and (max-width: 430px) {
@@ -145,5 +187,9 @@
 
     .main {
         height: auto;
+    }
+
+    .aside-img-singup {
+        width: 90%;
     }
 }
